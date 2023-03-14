@@ -1,0 +1,5 @@
+import TeamsContract from 0x03
+
+pub fun main(Name: String): TeamsContract.Team {
+    return TeamsContract.Teams[Name]!
+}

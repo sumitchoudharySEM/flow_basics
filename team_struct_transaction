@@ -1,0 +1,11 @@
+import TeamsContract from 0x03
+
+transaction(Name: String, Members: Int) {
+
+  prepare(signer: AuthAccount) {}
+
+  execute {
+    TeamsContract.addTeam(Name: Name, Members: Members)
+    log("team added")
+  }
+}
